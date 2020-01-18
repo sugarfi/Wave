@@ -1,4 +1,5 @@
 ![The Great Wave](https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Great_Wave_off_Kanagawa.jpg)
+[![Run on Repl.it](https://repl.it/badge/github/sugarfi/Wave)](https://repl.it/github/sugarfi/Wave)
 # Wave
 Wave is a Lisp-like language implemented in Python. Built on top of Numpy and Sympy,
 Wave is both powerful and simple. It can be easily extended to your needs, and is very 
