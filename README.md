@@ -1,12 +1,14 @@
 ![The Great Wave](https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Great_Wave_off_Kanagawa.jpg)
 # Wave
 Wave is a Lisp-like language implemented in Python. Built on top of Numpy and Sympy,
-Wave is both powerful and simple. It can be easily extended to your needs, and is very
+Wave is both powerful and simple. It can be easily extended to your needs, and is very 
 versatile. Sound interesting? Read on to get started.
+
 ---
 ## Installation
 Wave is simple to install. Just clone this repository, `cd` into the Wave directory,
 and run `pip3 install -r requirements.txt`. Then, you can run `./wave` in this directory.
+
 ---
 ## Basic Usage
 First, run `./wave` to open a REPL. You should see a `>` prompt. Obviously, you will want
@@ -26,6 +28,7 @@ import the `wio` library, but put it in its own object. If we did that, we would
 - The second line is simple. It calls the procedure `println` from `wio`. `println` simple takes
 a string as input and outputs it the screen, with a trailing newline. There is a `print` procedure,
 but it does not print with a newline.
+
 ---
 ## The Wave Philosophy
 That was a pretty minimal example, but it shows off one of the core principles of Wave:  
@@ -138,6 +141,7 @@ args = eval.parse_args(args, env)
 
 on your arguments. This just parses the arguments to that something like `(myfunc (+ 5 5))` would become
 `(myfunc 10)`, not the literal `(+ 5 5)`.
+
 ---
 ## License
 You can do whatever you want with this software. If you write a library, please submit a pull request
