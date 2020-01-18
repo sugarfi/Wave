@@ -5,6 +5,7 @@ Wave is both powerful and simple. It can be easily extended to your needs, and i
 versatile. Sound interesting? Read on to get started.
 ---
 ## Installation
+
 Wave is simple to install. Just clone this repository, `cd` into the Wave directory,
 and run `pip3 install -r requirements.txt`. Then, you can run `./wave` in this directory.
 ---
