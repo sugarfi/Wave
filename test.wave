@@ -1,0 +1,7 @@
+(useg "wio")
+(useg "wtypes")
+(useg "wmath")
+
+(println "Hello!")
+(var a (read "What is your name? " '(string)))
+(println "Hello there, " a "!")

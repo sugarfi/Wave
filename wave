@@ -1,0 +1,36 @@
+#!/usr/bin/python3
+
+import errors # Imports
+import eval
+import os
+import sys
+import data
+sys.path.append(sys.path[0] + '/lib') # Add the standard library to the path
+import wcore
+
+data.init() # Initalize node_t
+if sys.argv[1:]: # If we have a file, run that
+    env = eval.Env(sys.argv[1])
+    wcore.setup(env)
+
+    out = env.run()
+    last = out[::-1][0] # Get the output
+    try:
+        if last != None:
+            print(last) # TODO: use the builtin printer
+    except ValueError:
+        print(last) # If we get an error, then we have a Numpy array to print
+else: # No file, so start a REPL
+    try:
+        env = eval.Env()
+        wcore.setup(env)
+        while 1:
+            env.code = input('> ').replace('\'(', '(\' ') # Set up the code
+            out = env.run() # Run it
+            if out[-1] != None: # Print the output
+                print(out[-1]) # TODO: use the builtin printer, handle Numpy's ambiguous truth values
+            else:
+                print('nil')
+    except (KeyboardInterrupt, EOFError): # Exit on ^C and ^D
+        print('Exit.')
+        sys.exit(1)
