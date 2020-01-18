@@ -5,7 +5,6 @@ Wave is both powerful and simple. It can be easily extended to your needs, and i
 versatile. Sound interesting? Read on to get started.
 ---
 ## Installation
-
 Wave is simple to install. Just clone this repository, `cd` into the Wave directory,
 and run `pip3 install -r requirements.txt`. Then, you can run `./wave` in this directory.
 ---
@@ -136,7 +135,8 @@ class, but it is reccomened to use those in `data`: `data.num_t`, `data.arr_t`, 
 ```
 args = eval.parse_args(args, env)
 ```
-on you arguments. This just parses the arguments to that something like `(myfunc (+ 5 5))` would become
+
+on your arguments. This just parses the arguments to that something like `(myfunc (+ 5 5))` would become
 `(myfunc 10)`, not the literal `(+ 5 5)`.
 ---
 ## License
