@@ -72,12 +72,12 @@ is always a string.
 ### `wio`
 
 - `(list-print <val: list>)` Prints a list.
-- `(list-print <val: number>)` Prints a number.
-- `(list-print <val: string>)` Prints a string.
-- `(list-print <val: bool>)` Prints a boolean.
-- `(list-print <val: object>)` Prints an object.
-- `(list-print <val: node>)` Prints a node.
-- `(list-print <val: nil>)` Prints nil.
+- `(number-print <val: number>)` Prints a number.
+- `(string-print <val: string>)` Prints a string.
+- `(bool-print <val: bool>)` Prints a boolean.
+- `(object-print <val: object>)` Prints an object.
+- `(node-print <val: node>)` Prints a node.
+- `(nil-print <val: nil>)` Prints nil.
 - `(print <val: any>)` Prints a value based on its type.
 - `(println <val: any>)` Prints a value with a newline after it.
 - `(read <prompt: any> <type: node>)` Reads a value and converts it to `type`.
